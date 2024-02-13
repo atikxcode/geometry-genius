@@ -9,7 +9,16 @@
 </head>
 <body class="m-8">
   <header>
+    <div class=" navbar mb-6 bg-[#1090D133] lg:p-4 rounded-xl">
 
+      <div class="navbar-start">
+        <a class="text-2xl lg:text-3xl text-[#11111199] pl-2"><span class="text-3xl lg:text-5xl font-bold text-[#111111CC]">Interactive</span><br>Geometry Genius</a>
+      </div>
+      
+      <div class="navbar-end pr-2">
+        <a class="btn bg-[#1090D8] text-white w-[100px]">Blog</a>
+      </div>
+    </div>
   </header>
   <main>
   <!-- Main content container -->
@@ -17,15 +26,15 @@
     <!-- Shape card container -->
     <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <!-- Triangle -->
-      <div class="card w-96 bg-base-100 shadow-xl hover:bg-[#FBBCED] transition-all mb-8 p-4">
+      <div class="mx-auto lg:mx-none card lg:w-96 bg-base-100 shadow-xl hover:bg-[#FBBCED] transition-all mb-8 p-4 border-[1px] border-[#1111111A]">
         <figure><img src="images/triangle.png" alt="" /></figure>
         <div class="card-body">
           <h2 class="text-3xl text-center">Triangle</h2>
           <p class="text-center">Area(A) = 0.5 x b x h</p>
           <div>
-            <input id="triangle-base" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="b">
+            <input id="triangle-base" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1] mb-2 lg:mb-0" type="text" placeholder="b">
           <span class="mr-4 ml-2">cm</span>
-          <input id="triangle-height" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="h">
+          <input id="triangle-height" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="h">
           <span class="ml-2">cm</span>
           </div>
           <div>
@@ -37,15 +46,15 @@
         </div>
       </div>
       <!-- Rectangle -->
-      <div class="card w-96 bg-base-100 shadow-xl mb-8 p-4">
+      <div class="mx-auto lg:mx-none card lg:w-96 bg-base-100 shadow-xl hover:bg-[#69C7F0] transition-all mb-8 p-4 border-[1px] border-[#1111111A]">
         <figure><img src="images/rectangle.png" alt="" /></figure>
         <div class="card-body">
           <h2 class="text-3xl text-center">Rectangle</h2>
           <p class="text-center">Area(A) = w x l</p>
           <div>
-            <input id="rectangle-width" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="w">
+            <input id="rectangle-width" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="w">
           <span class="mr-4 ml-2">cm</span>
-          <input id="rectangle-length" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="l">
+          <input id="rectangle-length" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="l">
           <span class="ml-2">cm</span>
           </div>
           <div>
@@ -57,15 +66,15 @@
         </div>
       </div>
     <!-- Parallelogram  -->
-    <div class="card w-96 bg-base-100 shadow-xl mb-8 p-4">
+    <div class="mx-auto lg:mx-none card lg:w-96 bg-base-100 shadow-xl hover:bg-[#FBBCED] transition-all mb-8 p-4 border-[1px] border-[#1111111A]">
       <figure><img src="images/parallelogram.png" alt="" /></figure>
       <div class="card-body">
         <h2 class="text-3xl text-center">Parallelogram</h2>
         <p class="text-center">Area(A) = b x h</p>
         <div>
-          <input id="parallelogram-base" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="b">
+          <input id="parallelogram-base" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="b">
         <span class="mr-4 ml-2">cm</span>
-        <input id="parallelogram-height" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="h">
+        <input id="parallelogram-height" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="h">
         <span class="ml-2">cm</span>
         </div>
         <div>
@@ -77,15 +86,15 @@
       </div>
     </div>
       <!-- Rhombus -->
-      <div class="card w-96 bg-base-100 shadow-xl p-4">
+      <div class="mx-auto lg:mx-none card lg:w-96 bg-base-100 shadow-xl hover:bg-[#69C7F0] transition-all mb-8 lg:mb-0 p-4 border-[1px] border-[#1111111A]">
         <figure><img src="images/rhombus.png" alt="" /></figure>
         <div class="card-body">
           <h2 class="text-3xl text-center">Rhombus</h2>
           <p class="text-center">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
           <div>
-            <input id="rhombus-d1" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder=d1>
+            <input id="rhombus-d1" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder=d1>
           <span class="mr-4 ml-2">cm</span>
-          <input id="rhombus-d2" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="d2">
+          <input id="rhombus-d2" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="d2">
           <span class="ml-2">cm</span>
           </div>
           <div>
@@ -97,15 +106,15 @@
         </div>
       </div>
       <!-- Pentagon -->
-      <div class="card w-96 bg-base-100 shadow-xl p-4">
+      <div class="mx-auto lg:mx-none card lg:w-96 bg-base-100 shadow-xl hover:bg-[#FBBCED] transition-all mb-8 lg:mb-0 p-4 border-[1px] border-[#1111111A]">
         <figure><img src="images/pentagon.png" alt="" /></figure>
         <div class="card-body">
           <h2 class="text-3xl text-center">Pentagon</h2>
           <p class="text-center">Area(A) = 0.5 x p x b</p>
           <div>
-            <input id="pentagon-perimeter" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="p">
+            <input id="pentagon-perimeter" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="p">
           <span class="mr-4 ml-2">cm</span>
-          <input id="pentagon-base" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="b">
+          <input id="pentagon-base" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="b">
           <span class="ml-2">cm</span>
           </div>
           <div>
@@ -117,15 +126,15 @@
         </div>
       </div>
       <!-- Ellipse -->
-      <div class="card w-96 bg-base-100 shadow-xl p-4">
+      <div class="mx-auto lg:mx-none card lg:w-96 bg-base-100 shadow-xl hover:bg-[#69C7F0] transition-all mb-8 lg:mb-0 p-4 border-[1px] border-[#1111111A]">
         <figure><img src="images/ellipse.png" alt="" /></figure>
         <div class="card-body">
           <h2 class="text-3xl text-center">Ellipse</h2>
           <p class="text-center">Area(A) = πab</p>
           <div>
-            <input id="ellipse-a" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="a">
+            <input id="ellipse-a" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="a">
           <span class="mr-4 ml-2">cm</span>
-          <input id="ellipse-b" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]" type="text" placeholder="b">
+          <input id="ellipse-b" class="w-24 text-xl p-2 rounded-sm bg-[#F1F1F1]  mb-2 lg:mb-0" type="text" placeholder="b">
           <span class="ml-2">cm</span>
           </div>
           <div>
@@ -139,8 +148,8 @@
 
     </div>
     <!-- Area calculation container -->
-    <div class="w-96 border-2 border-gray-700 rounded-md">
-      <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+    <div class="mx-auto lg:mx-none mt-8 lg:mt-0 w-[300px] lg:w-96 border-[1px] h-[600px] lg:h-auto border-[#1111111A] rounded-md">
+      <h3 class="text-3xl text-center p-4 underline underline-offset-4">Area Calculation</h3>
     </div>
 
   </div>
